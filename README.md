@@ -2,8 +2,7 @@
 
 A cinematic, interactive 3D visualization of semantic vector spaces, built with Three.js and Vite. Built entirely by Gemini3 Pro (High) in Google Antigravity.
 
-![Vector Space Visualiser](https://via.placeholder.com/800x450?text=Vector+Space+Visualiser+Screenshot)
-*(Replace with actual screenshot)*
+![Uploading VSV_ScreenGrab.png…]()
 
 ## Overview
 
