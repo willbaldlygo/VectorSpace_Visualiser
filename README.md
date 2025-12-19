@@ -2,8 +2,6 @@
 
 A cinematic, interactive 3D visualization of semantic vector spaces, built with Three.js and Vite. Built entirely by Gemini3 Pro (High) in Google Antigravity.
 
-![Uploading VSV_ScreenGrab.png…]()
-
 ## Overview
 
 The **Vector Space Visualiser** renders a "semantic galaxy" where words are represented as stars in a 3D coordinate system. It allows users to explore relationships between concepts through a high-fidelity, immersive interface inspired by sci-fi aesthetics and modern developer tools.
