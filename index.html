@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vector Space Visualiser</title>
+</head>
+
+<body>
+  <div id="app">
+    <div id="canvas-container"></div>
+    <div id="controls" class="sidebar">
+      <div class="sidebar-header">
+        <div class="project-title">VECTOR_SPACE_VISUALISER</div>
+        <button id="toggle-btn" title="Toggle Sidebar">_</button>
+      </div>
+
+      <div class="sidebar-section" id="console-section">
+        <div class="section-label">CONSOLE INPUT</div>
+        <div id="input-wrapper">
+          <div class="prompt-char">&gt;</div>
+          <div id="text-overlay"></div>
+          <input type="text" id="text-input" placeholder="Enter sequence..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="sidebar-section" id="inspector-section">
+        <div class="section-label">PROPERTIES</div>
+        <!-- NAVIGATION PANEL -->
+        <div id="nav-panel">
+          <div class="nav-row">
+            <span class="nav-key">Token_ID</span>
+            <span class="nav-value" id="nav-token-id">--</span>
+          </div>
+          <div class="nav-row">
+            <span class="nav-key">Target_Vector</span>
+            <div class="nav-value-group">
+              <div class="nav-value" id="nav-coords">[0.00, 0.00, 0.00]</div>
+              <span class="nav-sub">type: float32[1536]</span>
+            </div>
+          </div>
+          <div class="nav-row">
+            <span class="nav-key">Bearing</span>
+            <span class="nav-value" id="nav-bearing">[0.00, 0.00, 0.00]</span>
+          </div>
+          <div class="nav-status-row">
+            <span class="nav-key">Status</span>
+            <div class="nav-status" id="nav-status">IDLE</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section" id="output-section">
+        <div class="section-label">OUTPUT LOG</div>
+        <div id="status">System ready. Awaiting input...</div>
+      </div>
+
+      <div class="sidebar-footer">
+        <button id="reset" class="action-btn">RESET_SYSTEM</button>
+        <div id="instructions">
+          <div class="doc-line"><span class="comment">// CONTROLS</span></div>
+          <div class="doc-line">LMB + Drag : Rotate</div>
+          <div class="doc-line">RMB + Drag : Pan</div>
+          <div class="doc-line">Scroll : Zoom</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
